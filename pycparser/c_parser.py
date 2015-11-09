@@ -732,6 +732,7 @@ class CParser(PLYParser):
                             | _COMPLEX
                             | SIGNED
                             | UNSIGNED
+                            | AND
         """
         p[0] = c_ast.IdentifierType([p[1]], coord=self._coord(p.lineno(1)))
 
